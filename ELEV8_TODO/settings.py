@@ -88,6 +88,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'todo_DB',
+        'HOST': ''
     }
 }
 
