@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import django_heroku
+# import djongo
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -84,14 +85,43 @@ WSGI_APPLICATION = 'ELEV8_TODO.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'todo_DB',
+#     }
+# }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'todo_data',
+#         'ENFORCE_SCHEMA': False,
+#         'CLIENT': {
+#             'host': '192.168.49.1',
+#             # 'host': 'localhost',
+#             'username': 'YWRtaW4=',
+#             'password': 'cGFzczEyMzQ=',
+#             'authSource': 'admin',
+#             'authMechanism': 'SCRAM-SHA-1',
+#         },
+
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'todo_DB',
-        'HOST': ''
+        'NAME': 'todo_data',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            # 'host': '192.168.49.1'
+            'username': 'admin',
+            'password': 'pass1234',
+            'authSource': 'admin',
+            'authMechanism': 'SCRAM-SHA-1',
+        },
+
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
