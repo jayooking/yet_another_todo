@@ -113,13 +113,12 @@ DATABASES = {
         'NAME': 'todo_data',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            # 'host': '192.168.49.1'
+            'host': '35.177.124.235'
             'username': 'admin',
             'password': 'pass1234',
             'authSource': 'admin',
             'authMechanism': 'SCRAM-SHA-1',
         },
-
     }
 }
 # Password validation
