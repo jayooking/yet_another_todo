@@ -15,4 +15,4 @@ RUN mkdir /code
 COPY . /code/
 WORKDIR /code
 RUN pip install --no-cache-dir -r /code/requirements.txt
-CMD ["python", "manage.py", "runserver"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

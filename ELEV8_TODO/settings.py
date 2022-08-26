@@ -113,7 +113,7 @@ DATABASES = {
         'NAME': 'todo_data',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            # 'host': '192.168.49.1'
+            'host': '172.18.0.1',
             'username': 'admin',
             'password': 'pass1234',
             'authSource': 'admin',
